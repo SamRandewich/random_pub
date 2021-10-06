@@ -3,7 +3,6 @@ import csv
 import random
 
 pubs_list = []
-i=1
 
 with open("open_pubs.csv") as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
@@ -11,10 +10,9 @@ with open("open_pubs.csv") as csv_file:
 
     for row in csv_reader:
         pubs_list.append(row[1])
-        i+=1
 
 x = len(pubs_list)
-y=random.randint(0,x)
+y=random.randint(0,x-1)
 print (pubs_list[y])
 
     
