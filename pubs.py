@@ -12,7 +12,7 @@ with open("open_pubs.csv") as csv_file:
         pubs_list.append(row[1])
 
 x = len(pubs_list)
-y=random.randint(0,x-1)
+y=random.randint(0,x)
 print (pubs_list[y])
 
     
